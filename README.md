@@ -1,16 +1,13 @@
-USTH ICT 2022 Android Application Development
-=====================================================
+# USTH ICT 2022 Android Application Development
 
 Students are expected to:
 
-* Fork this repository to your github account
-* Update student name and ID to this README file
-* Push your commits regularly, with proper commit messages
+- Fork this repository to your github account
+- Update student name and ID to this README file
+- Push your commits regularly, with proper commit messages
 
-Student Info
-=======================
+# Student Info
 
-* Name: *YourNameHere*
-* ID: *YourIdHere*
-* Group ID: *Your Group ID here*
-
+- Name: Nguyễn Quốc Hùng
+- ID: BI10-072
+- Group ID: 14
