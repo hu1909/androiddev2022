@@ -18,14 +18,30 @@
         <entry key="..\:/AndroidStudioProjects/Email2/app/src/main/res/menu/menu_compose.xml" value="0.1765625" />
         <entry key="..\:/AndroidStudioProjects/Email2/app/src/main/res/menu/menu_ib_detail.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProjects/Email2/app/src/main/res/menu/menu_nav.xml" value="0.1" />
+        <entry key="..\:/Users/hungn/AndroidStudioProjects/Email2/app/src/main/res/drawable-mdpi/button_background.xml" value="0.18645833333333334" />
+        <entry key="..\:/Users/hungn/AndroidStudioProjects/Email2/app/src/main/res/drawable-mdpi/button_background2.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/hungn/AndroidStudioProjects/Email2/app/src/main/res/drawable-mdpi/gradient_background.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/hungn/AndroidStudioProjects/Email2/app/src/main/res/drawable-mdpi/ic_baseline_account_circle_24.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/hungn/AndroidStudioProjects/Email2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/hungn/AndroidStudioProjects/Email2/app/src/main/res/drawable/ic_baseline_create_24.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/hungn/AndroidStudioProjects/Email2/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/hungn/AndroidStudioProjects/Email2/app/src/main/res/drawable/ic_baseline_send_24.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/hungn/AndroidStudioProjects/Email2/app/src/main/res/drawable/ic_baseline_star_24.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/hungn/AndroidStudioProjects/Email2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/hungn/AndroidStudioProjects/Email2/app/src/main/res/drawable/ic_round.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/hungn/AndroidStudioProjects/Email2/app/src/main/res/layout/activity_compose.xml" value="0.209375" />
-        <entry key="..\:/Users/hungn/AndroidStudioProjects/Email2/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/hungn/AndroidStudioProjects/Email2/app/src/main/res/layout/activity_ib_detail.xml" value="0.209375" />
+        <entry key="..\:/Users/hungn/AndroidStudioProjects/Email2/app/src/main/res/layout/activity_login.xml" value="0.1703125" />
+        <entry key="..\:/Users/hungn/AndroidStudioProjects/Email2/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/hungn/AndroidStudioProjects/Email2/app/src/main/res/layout/activity_sign_up.xml" value="0.33" />
+        <entry key="..\:/Users/hungn/AndroidStudioProjects/Email2/app/src/main/res/layout/activity_splash.xml" value="0.209375" />
         <entry key="..\:/Users/hungn/AndroidStudioProjects/Email2/app/src/main/res/layout/fragment_inbox.xml" value="0.209375" />
         <entry key="..\:/Users/hungn/AndroidStudioProjects/Email2/app/src/main/res/layout/fragment_sent.xml" value="0.209375" />
         <entry key="..\:/Users/hungn/AndroidStudioProjects/Email2/app/src/main/res/layout/fragment_spam.xml" value="0.209375" />
         <entry key="..\:/Users/hungn/AndroidStudioProjects/Email2/app/src/main/res/layout/fragment_trash.xml" value="0.209375" />
         <entry key="..\:/Users/hungn/AndroidStudioProjects/Email2/app/src/main/res/layout/header_nav.xml" value="0.209375" />
         <entry key="..\:/Users/hungn/AndroidStudioProjects/Email2/app/src/main/res/layout/recycle_inbox_list.xml" value="0.209375" />
+        <entry key="..\:/Users/hungn/AndroidStudioProjects/Email2/app/src/main/res/menu/menu_nav.xml" value="0.19375" />
       </map>
     </option>
   </component>

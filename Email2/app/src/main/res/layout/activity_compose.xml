@@ -13,7 +13,7 @@
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar2"
-            android:background="@color/yellow"
+            android:background="#2E48D8"
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"
             android:theme="@style/ThemeOverlay.AppCompat.Light"/>
@@ -24,53 +24,59 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="10dp">
+        android:padding="10dp"
+        android:background="@drawable/border">
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
+            android:text="FROM: "
             android:textSize="20sp"
-            android:text="From" />
+            android:gravity="center"/>
         <EditText
-            android:id="@+id/from"
-            android:textSize="20sp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:id="@+id/From_email"
+            android:background="@android:color/transparent"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="10dp">
+        android:padding="10dp"
+        android:background="@drawable/border">
         <TextView
-            android:textSize="20sp"
-            android:layout_width="wrap_content"
+            android:layout_width="50dp"
             android:layout_height="wrap_content"
-            android:text="To" />
+            android:text="TO: "
+            android:textSize="20sp"
+            android:gravity="center"/>
 
         <EditText
-            android:inputType="textEmailAddress"
-            android:id="@+id/to"
-            android:layout_width="784dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp" />
+            android:id="@+id/To_email"
+            android:background="@android:color/transparent"/>
     </LinearLayout>
 
     <EditText
-        android:textSize="20sp"
         android:id="@+id/subject"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:hint="Subject"/>
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        android:hint="Subject: "
+        android:padding="10dp" />
 
     <EditText
-        android:textSize="20sp"
-        android:id="@+id/content"
+        android:id="@+id/message"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/kem"
-        android:hint="Compose email"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/border"
+        android:gravity="top"
+        android:hint="Message"
         android:padding="10dp" />
 
 </LinearLayout>

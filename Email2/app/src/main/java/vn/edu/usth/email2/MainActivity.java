@@ -10,11 +10,17 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import vn.edu.usth.email2.fragment.InboxFragment;
 import vn.edu.usth.email2.fragment.SentFragment;
@@ -33,6 +39,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private static final int HELP = 6;
 
     private int mCurrentFragment = FRAGMENT_INBOX;
+    private ImageView imageView;
+    private TextView tvname, tvemail;
+    private NavigationView navigationView;
 
 
 
@@ -43,17 +52,28 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        initUI();
+
         mDrawerLayout = findViewById(R.id.drawer);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,
                 mDrawerLayout, toolbar, R.string.open_nav, R.string.close_nav);
         mDrawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = findViewById(R.id.nav);
+        navigationView = findViewById(R.id.nav);
         navigationView.setNavigationItemSelectedListener(this);
 
         replaceFragment(new InboxFragment());
         navigationView.getMenu().findItem(R.id.inbox).setChecked(true);
+
+        information();
+    }
+
+    private void initUI() {
+        navigationView = findViewById(R.id.nav);
+        imageView = navigationView.getHeaderView(0).findViewById(R.id.dp);
+        tvname = navigationView.getHeaderView(0).findViewById(R.id.name);
+        tvemail = navigationView.getHeaderView(0).findViewById(R.id.email);
     }
 
     @Override
@@ -86,15 +106,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 mCurrentFragment = FRAGMENT_TRASH;
             }
         }
-
-        if( id == R.id.profile){
+        if( id == R.id.signout){
+            
         }
 
-        if( id == R.id.setting){
-        }
-
-        if( id == R.id.help){
-        }
         mDrawerLayout.closeDrawer(GravityCompat.START);
         return true;
     }
@@ -115,5 +130,20 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.content, fragment);
         transaction.commit();
+    }
+
+    private void information(){
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if(user == null){
+            return;
+        }else{
+            String name = user.getDisplayName();
+            String email = user.getEmail();
+            Uri photoUrl = user.getPhotoUrl();
+
+            tvname.setText(name);
+            tvemail.setText(email);
+            Glide.with(this).load(photoUrl).error(R.drawable.ic_baseline_account_circle_24).into(imageView);
+        }
     }
 }

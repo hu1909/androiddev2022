@@ -3,14 +3,14 @@
     android:layout_width="match_parent"
     android:layout_height="180dp"
     android:orientation="vertical"
-    android:background="@color/lightyellow"
+    android:background="#2E48D8"
     android:padding="14dp">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/dp"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:src="@drawable/ic_launcher_background"/>
+        android:src="@drawable/ic_baseline_account_circle_24"/>
 
     <TextView
         android:id="@+id/name"

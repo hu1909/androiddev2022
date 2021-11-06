@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Email2">
         <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".IbDetailActivity"
             android:exported="true"
             android:parentActivityName=".MainActivity" />
@@ -25,7 +34,7 @@ In case supporting devices below 16 API
             android:value=".MainActivity" />
         -->
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
